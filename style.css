@@ -1,0 +1,81 @@
+
+.video-banner {
+
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Custom styles for sidebar */
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.973);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 48px 0 0; /* Height of navbar */
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+    }
+    
+.sidebar-sticky {
+position: relative;
+top: 0;
+height: calc(100vh - 48px); /* Height of navbar */
+padding-top: .5rem;
+overflow-x: hidden;
+overflow-y: auto; /* Scrollable contents if viewport is shorter than content */
+}
+
+
+
+.card {
+    height: 100%;
+    transition: transform 0.2s;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card-img-top {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.card-body {
+    padding: 20px;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+ 
+    margin-bottom: 0.5rem;
+}
+.card-text {
+    color: #555;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+.card-text strong {
+    color: #333;
+}
+.btn-add-to-cart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.btn-add-to-cart:hover {
+    background-color: #0056b3;
+}
